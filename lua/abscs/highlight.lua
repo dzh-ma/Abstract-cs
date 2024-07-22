@@ -599,7 +599,7 @@ M.plugins = {
 
 	-- Functions
 	--------------------------------
-	["@function"]              = { fg = colors.Function }, -- function definitions
+	["@function"]              = { fg = colors.Include }, -- function definitions
 	["@function.builtin"]      = { fg = colors.FuncBuiltin }, -- built-in functions
 	-- ["@function.call"]        = {},-- function calls
 	["@function.macro"]        = { fg = colors.FuncMacro }, -- preprocessor macros
@@ -647,7 +647,9 @@ M.plugins = {
 	["@markup.italic"]         = { fg = colors.markItalic, style = "italic" }, -- text with emphasis
 	-- ["@markup.strikethrough"]  = {}, -- strikethrough text
 	["@markup.underline"]      = { style = "underline" },                 -- underlined text (only for literal underline markup!)
-	["@markup.heading"]        = { fg = colors.Title, style = "NONE" },   -- headings, titles (including markers)
+	["@markup.heading"]        = { fg = colors.Title, style = "underline" },   -- headings, titles (including markers)
+    ['@markup.heading.markdown'] = { fg = colors.Title },
+    ['@punctuation.special.markdown'] = { fg = colors.Title },
 	["@markup.quote"]          = { fg = colors.markQuote },               -- block quotes
 	-- ["@markup.math"]           = {}, -- math environments (e.g. `$ ... $` in LaTeX)
 	-- ["@markup.environment"]    = {}, -- environments (e.g. in LaTeX)
@@ -657,11 +659,12 @@ M.plugins = {
 	-- ["@markup.raw"]            = {}, -- literal or verbatim text (e.g., inline code)
 	-- ["@markup.raw.block"]      = {}, -- literal or verbatim text as a stand-alone block (use priority 90 for blocks with injections)
 	["@markup.list"]           = { fg = colors.markList }, -- list markers
-	-- ["@markup.list.checked"]   = {}, -- checked todo-style list markers
+	["@markup.list.checked"]   = { fg = colors.markUrlTitleDelimiter   }, -- checked todo-style list markers
 	-- ["@markup.list.unchecked"] = {}, -- unchecked todo-style list markers
 	-- ["@diff.plus"]             = {}, -- added text (for diff files)
 	-- ["@diff.minus"]            = {}, -- deleted text (for diff files)
 	-- ["@diff.delta"]            = {}, -- changed text (for diff files)
+    ["@markup.raw.block.typst"] = { fg = colors.fg },
 
 	--------------------------------
 	-- Non-highlighting captures

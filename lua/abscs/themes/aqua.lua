@@ -2,7 +2,7 @@
 return {
 
 	fg                   = "#FFFADE",
-	bg                   = "#060606",
+	bg                   = "#000000",
 	second_bg            = "#252525",
 
 
@@ -77,7 +77,7 @@ return {
 	Define               = "#D68EB2",
 	Definition           = "#FFCC66",
 	Error                = "#FF0000",
-	ErrorMsg             = "#FF3939 ",
+	ErrorMsg             = "#FF3939",
 	Exception            = "#D68EB2",
 	Field                = "#05d2dd",
 	FlexibleBoxAttr      = "#00557F",
@@ -171,7 +171,7 @@ return {
 	markId                 = "#D16BB7",
 	markIdDeclaration      = "#1D918B",
 	markIdDelimiter        = "#C8C9C1",
-	markItalic             = "#CCCCCC",
+	markItalic             = "#00BFA4",
 	markLinkDelimiter      = "#C8C9C1",
 	markLinkText           = "#1D918B",
 	markList               = "#FC2929",
