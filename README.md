@@ -20,21 +20,6 @@ Primarily changed background to true black for OLED use.
 ## ⚡️ Requirements
 - Neovim >= 0.5.0
 
-## 📦 Installation
-Install the theme with your preferred package manager:
-
-[vim-plug](https://github.com/junegunn/vim-plug)
-
-```vim
-Plug 'Abstract-IDE/Abstract-cs'
-```
-
-[packer](https://github.com/wbthomason/packer.nvim)
-
-```lua
-use 'Abstract-IDE/Abstract-cs'
-```
-
 ## 🚀 Usage
 Enable the colorscheme:
 
